@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --black: #212529;
+    --white: #F8F9FA;
+    --width: 880px;
+    --grey: #DEE2E6;
+    --grey2 : #6C757D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    height: 100px;
+}
+
+nav div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--width);
+}
+
+nav h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 475px;
+}
+
+nav ul li {
+    list-style-type:none;
+    
+}
+
+nav ul li a {
+    text-decoration: none !important;
+    color: inherit;
+    font-size: 20px;
+}
+
+section.banner {
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey);
+    height: 550px;
+}
+
+section.banner section.banner-wrapper {
+    width: var(--width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.banner section.banner-wrapper div.left h1 {
+    color: var(--black);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+section.banner section.banner-wrapper div.left p {
+    font-size: 20px;
+    color: var(--grey2);
+}
+
+section.banner section.banner-wrapper div.left button {
+    background: var(--black);
+    color: var(--white);
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 20px;
+    font-weight:400;
+    border-radius: 10px;
+}
+
+section.banner section.banner-wrapper div.right {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+section.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+section.about div.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: var(--width);
+}
+
+section.about div.about-wrapper div.title {
+    font-size: 64px;
+    color: var(--black);
+    font-weight:500;
+}
+
+section.about div.about-wrapper div.content {
+    width: 600px;
+}
+
+section.about div.about-wrapper div.content p {
+    font-size: 20px;
+}
+
+section.about div.about-wrapper div.content div.button-wrapper{
+    margin-top: 20px;
+}
+
+section.about div.about-wrapper div.content div.button-wrapper button {
+    padding: 5px 10px;
+    border: none;
+    font-size: 20px;
+    font-weight:400;
+    border-radius: 10px;
+}
+
+section.about div.about-wrapper div.content div.button-wrapper button:first-child {
+    background-color: var(--black);
+    color: var(--white);
+    margin-right: 20px;
+}
+
+section.about div.about-wrapper div.content div.button-wrapper button:last-child {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+section.services {
+    height: 600px;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.services div.services-wrapper {
+    width: var(--width);
+}
+
+section.services div.services-wrapper div.text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.services div.services-wrapper div.text h2 {
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+section.services div.services-wrapper div.text p {
+    width: 600px;
+    color: var(--grey2);
+}
+
+section.services div.services-wrapper div.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.services div.services-wrapper div.card-container div.card {
+    height: 300px;
+    width: 270px;
+    background-color: var(--black);
+    color:var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section.services div.services-wrapper div.card-container div.card div.card-wrapper i {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section.services div.services-wrapper div.card-container div.card div.card-wrapper h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+section.services div.services-wrapper div.card-container div.card div.card-wrapper p {
+    font-size: 20px;
+    font-weight: 300;
+    width: 210px;
+}
